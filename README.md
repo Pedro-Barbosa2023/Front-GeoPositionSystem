@@ -24,7 +24,7 @@ Front End
 - Linguagem de marcação - HTML
 - Estilização da(s) páginas - CSS
 - Framework utilizadas - React js | Google Maps API | ASP.NET
-- Validação de usuário - Firebase API
+- Validação de usuário - Firebase Authentication API
 
 Back End 
 
@@ -34,8 +34,8 @@ Back End
 
 Integrantes do projeto e atribuições
 
-- Fabrinni Dias Bastos | Danilo Garcia Mariano: Desenvolvimento e integração do firmware do hardware com o Back End
-- Pedro Henrique de Oliveira Barbosa | Arthur Pontes Piazzaroli: Desenvolvimento do Front End e Back End
-- Obs.: A depender da demanda, todos os membros podem atuar em partes diferentes do projeto
+- Fabrinni Dias Bastos | Danilo Garcia Mariano: Desenvolvimento e integração do firmware do hardware com o Back End (Dev)
+- Pedro Henrique de Oliveira Barbosa | Arthur Pontes Piazzaroli: Desenvolvimento do Front End e Back End (Full-Stack dev)
+- Obs.: A depender da demanda, todos os membros podem atuar em partes diferentes do projeto 
 
 
