@@ -30,6 +30,12 @@ Back End
 
 - Node js
 - Frameworks - REST API (CRUD) | Express | Socket.io
-- Banco de dados - MySQL
+- Sistema de Geranciamento de Banco de Dados - MySQL
+
+Integrantes do projeto e atribuições
+
+- Fabrinni Dias Bastos | Danilo Garcia Mariano: Desenvolvimento e integração do firmware do hardware com o Back End
+- Pedro Henrique de Oliveira Barbosa | Arthur Pontes Piazzaroli: Desenvolvimento do Front End e Back End
+- Obs.: A depender da demanda, todos os membros podem atuar em partes diferentes do projeto
 
 
