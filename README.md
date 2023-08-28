@@ -28,7 +28,7 @@ Front End
 Back End 
 
 - Node js
-- Frameworks - REST API (CRUD) | Express | Socket.io
+- Frameworks - REST API (CRUD) | Express | MQTT
 - Sistema de Geranciamento de Banco de Dados - MySQL
 - Validação de usuário - Firebase Authentication API
 
