@@ -24,13 +24,13 @@ Front End
 - Linguagem de marcação - HTML
 - Estilização da(s) páginas - CSS
 - Framework utilizadas - React js | Google Maps API | ASP.NET
-- Validação de usuário - Firebase Authentication API
 
 Back End 
 
 - Node js
 - Frameworks - REST API (CRUD) | Express | Socket.io
 - Sistema de Geranciamento de Banco de Dados - MySQL
+- Validação de usuário - Firebase Authentication API
 
 Integrantes do projeto e atribuições
 
