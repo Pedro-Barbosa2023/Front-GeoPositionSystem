@@ -23,7 +23,7 @@ Front End
 - Linguagem utilizada - JavaScript
 - Linguagem de marcação - HTML
 - Estilização da(s) páginas - CSS
-- Framework utilizadas - React js | Google Maps API | ASP.NET
+- Framework utilizadas - React js | Google Maps API 
 
 Back End 
 
