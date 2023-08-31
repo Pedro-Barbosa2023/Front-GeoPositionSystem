@@ -9,6 +9,10 @@ Recursos parciais
 - Usuário consegue dar zoom no mapa
 - Usuário recebe informações do GPS (velocidade, data hora, altitude, latitude e longitude)
 - Usuário faz logout da página
+- Usuário visualiza listas de pontos em que cada linha passa
+- Usuário visualiza os horários de partida de cada linha
+- Usuário recebe estimativa do tempo de espera por linhas de onibus em um determinado ponto
+- Usuário pode criar uma lista de pontos favoritos
 
 Hardware
 
