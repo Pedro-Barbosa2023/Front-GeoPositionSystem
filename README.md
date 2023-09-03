@@ -51,7 +51,7 @@ Backlog do Sprint
 
 História #1: Como usuário, eu gostaria de ter um hardware capaz de monitorar a minha posição em tempo real 
 
-Tarefas e responsáveis:
+Tarefas e responsáveis
 
 - Criar hardware, com módulos GPS e microntrolador [Fabrini]
 - Estruturar um firmware para gerenciar a lógica de posicionamento [Danilo] [Fabrini]
