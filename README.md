@@ -90,7 +90,7 @@ Tarefas e responsáveis
 
 História #5: Como usuário, eu gostaria de visualizar informações do GPS (velocidade, data hora, altitude, latitude e longitude)
 
-Tarefas e responsabilidades
+Tarefas e responsáveis
 
 - Criar um espaço na página para visualização de informações adicionais de velocidade, altitude, data e hora [Arthur]
 - Criar um controller para acessar tais informações no banco de dados [Arthur]
