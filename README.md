@@ -32,6 +32,7 @@ Integrantes do projeto e atribuições
 
 Backlog do Produto
 
+- Como usuário, eu gostaria de ter um hardware capaz de monitorar a minha posição em tempo real 
 - Como usuário, eu gostaria de realizar cadastro
 - Como usuário, eu gostaria de realizar Login
 - Como usuário, eu gostaria de visualizar mapa com marcador de posição em tempo real
