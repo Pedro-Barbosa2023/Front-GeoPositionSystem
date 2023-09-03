@@ -29,7 +29,7 @@ Integrantes do projeto e atribuições
 - Pedro Henrique de Oliveira Barbosa | Arthur Pontes Piazzaroli: Desenvolvimento do Front End e Back End (Full-Stack dev)
 - Obs.: A depender da demanda, todos os membros podem atuar em partes diferentes do projeto 
 
-==============================================================================================================================
+==========================================================================
 Backlog do Produto
 
 - Como usuário, eu gostaria de realizar cadastro
@@ -44,7 +44,7 @@ Backlog do Produto
 - Como usuário, eu gostaria de criar uma lista de rotas favoritas
 - Como usuário, eu gostaria de editar o tema da interface de usário, alternando entre "dark" e "white"
 
-==============================================================================================================================
+==========================================================================
 Backlog do Sprint
 
 História #1: Como usuário, eu gostaria de ter um hardware capaz de monitorar a minha posição em tempo real 
