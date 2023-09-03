@@ -50,7 +50,6 @@ Backlog do Produto
 Backlog do Sprint
 
 História #1: Como usuário, eu gostaria de ter um hardware capaz de monitorar a minha posição em tempo real 
-
 Tarefas e responsáveis
 
 - Criar hardware, com módulos GPS e microntrolador [Fabrini]
@@ -58,8 +57,7 @@ Tarefas e responsáveis
 - Linkar o firmware do GPS com o BD da camada Back End [Danilo] [Fabrini]
   
 História #2: Como usuário, eu gostaria de realizar cadastro
-
-Tarefas e responsáveis:
+Tarefas e responsáveis
 
 - Estruturar e implementar uma página de Cadastro completa [Pedro]
 - Estruturar banco de bancos e criar as tabelas [Pedro]
@@ -69,8 +67,7 @@ Tarefas e responsáveis:
 - Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Pedro]
 
 História #3: Como usuário, eu gostaria de realizar Login
-
-Tarefas e responsáveis:
+Tarefas e responsáveis
 
 - Estruturar e implementar uma página de Login completa [Arthur]
 - Implementar e verificar no Firebase se o cliente possui credenciais de acesso (cadastro) [Arthur]
@@ -78,8 +75,7 @@ Tarefas e responsáveis:
 - Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Arthur]
   
 História #4: Como usuário, eu gostaria de visualizar mapa com marcador de posição em tempo real
-
-Tarefas e responsáveis:
+Tarefas e responsáveis
 
 - Estruturar página principal. Adicionar o mapa no centro da página e configurar o layout deste, usando o Google Maps API [Pedro]
 - Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Pedro]
@@ -89,15 +85,13 @@ Tarefas e responsáveis:
 - Validar lógica de acesso de latitude e longitude. Garantir que o marcador de posição esteja funcionando com base na Lat. e Long. do usuário [Pedro]
 
 História #5: Como usuário, eu gostaria de visualizar informações do GPS (velocidade, data hora, altitude, latitude e longitude)
-
-Tarefas e responsabilidades:
+Tarefas e responsabilidades
 
 - Criar um espaço na página para visualização de informações adicionais de velocidade, altitude, data e hora [Arthur]
 - Criar um controller para acessar tais informações no banco de dados [Arthur]
 
 História #6: Como usuário, eu gostaria de fazer logout da página
-
-Tarefas e responsáveis:
+Tarefas e responsáveis
 
 - Criar um botão de "logout" da página principal. Deixar botão funcional [Arthur]
 - Criar um Controller para processar a requisição e rotear o usuário para página de Login [Pedro]
