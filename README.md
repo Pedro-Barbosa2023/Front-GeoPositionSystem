@@ -1,7 +1,7 @@
 # POC-GeoPositionSystem
 Prova de conceito de uma aplicação Back End e Front End para gerenciamento dos dados de um sensor de geolocalização em tempo real para automóveis.
 
-Recursos parciais
+Backlog do Produto
 
 - Usuário realiza cadastro
 - Usuário realiza Login
@@ -13,6 +13,12 @@ Recursos parciais
 - Usuário visualiza os horários de partida de cada linha
 - Usuário recebe estimativa do tempo de espera por linhas de onibus em um determinado ponto
 - Usuário pode criar uma lista de pontos favoritos
+
+Backlog do Sprint
+- Usuário visualiza mapa com marcador de posição em tempo real
+- Usuário recebe informações do GPS (velocidade, data hora, altitude, latitude e longitude)
+- Usuário visualiza listas de pontos em que cada linha passa
+- Usuário recebe estimativa do tempo de espera por linhas de onibus em um determinado ponto
 
 Hardware
 
