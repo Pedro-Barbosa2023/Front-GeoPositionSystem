@@ -56,19 +56,8 @@ Tarefas e responsáveis
 - Criar hardware, com módulos GPS e microntrolador [Fabrini]
 - Estruturar um firmware para gerenciar a lógica de posicionamento [Danilo] [Fabrini]
 - Linkar o firmware do GPS com o BD da camada Back End [Danilo] [Fabrini]
-  
-História #2: Como usuário, eu gostaria de realizar cadastro
 
-Tarefas e responsáveis
-
-- Estruturar e implementar uma página de Cadastro completa [Pedro]
-- Estruturar banco de bancos e criar as tabelas [Pedro]
-- Estruturar o model de usuário para realizar o cadastro de usuário [Pedro]
-- Estruturar um controller no SGBD para receber a solicitação de cadastro. Rotear e gerenciar essa requisição [Pedro]
-- Implementar e validar Firebase API, para inserção de novos usários no BD [Pedro]
-- Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Pedro]
-
-História #3: Como usuário, eu gostaria de realizar Login
+História #2: Como usuário, eu gostaria de realizar Login
 
 Tarefas e responsáveis
 
@@ -77,7 +66,7 @@ Tarefas e responsáveis
 - Estruturar no controller no SGBD para receber a requição, gerenciar e rotear a solicitação [Arthur]
 - Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Arthur]
   
-História #4: Como usuário, eu gostaria de visualizar mapa com marcador de posição em tempo real
+História #3: Como usuário, eu gostaria de visualizar mapa com marcador de posição em tempo real
 
 Tarefas e responsáveis
 
@@ -88,19 +77,12 @@ Tarefas e responsáveis
 - Implementar um Controller para gerenciamento de requisições de acesso as informações de latitude e longitude (do BD). Gerar requisição a cada 30 segundos [Pedro]
 - Validar lógica de acesso de latitude e longitude. Garantir que o marcador de posição esteja funcionando com base na Lat. e Long. do usuário [Pedro]
 
-História #5: Como usuário, eu gostaria de visualizar informações do GPS (velocidade, data hora, altitude, latitude e longitude)
+História #4: Como usuário, eu gostaria de visualizar informações do GPS (velocidade, data hora, altitude, latitude e longitude)
 
 Tarefas e responsáveis
 
 - Criar um espaço na página para visualização de informações adicionais de velocidade, altitude, data e hora [Arthur]
 - Criar um controller para acessar tais informações no banco de dados [Arthur]
-
-História #6: Como usuário, eu gostaria de fazer logout da página
-
-Tarefas e responsáveis
-
-- Criar um botão de "logout" da página principal. Deixar botão funcional [Arthur]
-- Criar um Controller para processar a requisição e rotear o usuário para página de Login [Pedro]
 
 
 
