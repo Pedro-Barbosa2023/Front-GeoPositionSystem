@@ -44,6 +44,8 @@ Backlog do Produto
 - Como usuário, eu gostaria de receber estimativa do tempo de espera por linhas de onibus em um determinado ponto
 - Como usuário, eu gostaria de criar uma lista de rotas favoritas
 - Como usuário, eu gostaria de editar o tema da interface de usário, alternando entre "dark" e "white"
+- Como usuário, eu gostaria de alterar o modo de exibição do mapa - alternando entre satélite e 2D
+- Como usuário, eu gostaria de 
 
 
 
@@ -57,14 +59,11 @@ Tarefas e responsáveis
 - Estruturar um firmware para gerenciar a lógica de posicionamento [Danilo] [Fabrini]
 - Linkar o firmware do GPS com o BD da camada Back End [Danilo] [Fabrini]
 
-História #2: Como usuário, eu gostaria de realizar Login
+História #2: Como usuário, eu gostaria de editar o tema da interface de usário, alternando entre "dark" e "white"
 
 Tarefas e responsáveis
 
-- Estruturar e implementar uma página de Login completa [Arthur]
-- Implementar e verificar no Firebase se o cliente possui credenciais de acesso (cadastro) [Arthur]
-- Estruturar no controller no SGBD para receber a requição, gerenciar e rotear a solicitação [Arthur]
-- Implementar funcionalidade de alterar tema da página entre "dark" e "white" [Arthur]
+- Implementar uma função e botão para alterar o tema da página [Pedro]
   
 História #3: Como usuário, eu gostaria de visualizar mapa com marcador de posição em tempo real
 
