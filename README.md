@@ -84,8 +84,7 @@ Tarefas e responsáveis
 - Criar um controller para acessar tais informações no banco de dados [Arthur]
 
 
-
-
+-
 
 
 
