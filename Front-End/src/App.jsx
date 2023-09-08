@@ -2,6 +2,7 @@ import './App.css'
 import './index.css'
 import Headers from './components/layout/Headers';
 import { GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api'
+import { useWindowSize } from "@uidotdev/usehooks";
 
 function App() {
   const { isLoaded } = useJsApiLoader({
@@ -15,13 +16,13 @@ const position={
    lat: -19.6009590611331,
    lng: -43.8946541874073
 };
+  const size = useWindowSize();
   return(
-    <div className = "headers">
-      <Headers/>
+    <>
       {isLoaded ? (
-      <div className='google-map'>
+      <div>
         <GoogleMap
-          mapContainerStyle={{width: '700px', height: '500px'}}
+          mapContainerStyle={{width: size.width, height: size.height}}
           center={position}
           zoom={15}
           /*
@@ -35,7 +36,7 @@ const position={
       ) : (
         <></>
       )}
-    </div>
+    </>
   );
 }
 
