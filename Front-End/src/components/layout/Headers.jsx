@@ -1,19 +1,9 @@
 import React, { useState } from "react";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+ 
 } from "reactstrap";
-
 
 const Headers = (args) => {
   const [theme, setTheme] = useState(false);
@@ -21,17 +11,18 @@ const Headers = (args) => {
   return (
     <div>
       <>
-        <Navbar className="my-2" color="black" dark >
+        <Navbar className="navBar" dark >
           <NavbarBrand href="/">
             <img
-              alt="Bem-Vindo ao GPS Locator"
-              src="../../img/logo.svg"
+              alt="GPS Locator"
+              src="/images/logo.png"
               style={{
                 height: 40,
                 width: 40,
               }}
             />
           </NavbarBrand>
+          <h2 className="textNavBar" color="white">GeoPosition System</h2>
         </Navbar>
       </>
     </div>

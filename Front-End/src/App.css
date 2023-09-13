@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
-
-
-
+.navBar {
+  background-color: #403E3E;
+}
+.textNavBar {
+  align-items: center;
+}
