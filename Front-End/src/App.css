@@ -3,10 +3,20 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
 }
 .navBar {
   background-color: #403E3E;
 }
 .textNavBar {
   align-items: center;
+}
+
+.modalnovo{
+  height: 500px;
+  width: 200px;
+  position: absolute;
+  background-color: #403E3E;
+  left:410px;
+  top: 245px;
 }

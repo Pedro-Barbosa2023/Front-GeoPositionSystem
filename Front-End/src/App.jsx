@@ -3,6 +3,7 @@ import "./App.css";
 import "./index.css";
 import Headers from "./components/layout/Headers";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import Helmet from 'react-helmet';
 
 function App() {
   const { isLoaded } = useJsApiLoader({
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="navBar">
+      <Helmet bodyAttributes={{style: 'background-color : #d3d3d3'}}/> 
       <Headers/>
       <div>
         {isLoaded ? (
@@ -44,6 +46,9 @@ function App() {
         ) : (
           <></>
         )}
+        <div className="modalnovo">
+          <text>TESTE</text>
+        </div>
       </div>
     </div>
   );
