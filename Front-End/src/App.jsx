@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./index.css";
 import Headers from "./components/layout/Headers";
+import CardInformation from "./components/layout/Card";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 function App() {
@@ -30,9 +31,10 @@ function App() {
   }, []);
 
   return (
+    <>
     <div className="navBar">
       <Headers/>
-      <div>
+      <div className="map">
         {isLoaded ? (
           <GoogleMap
             mapContainerStyle={{ width: "700px", height: "500px" }}
@@ -46,6 +48,10 @@ function App() {
         )}
       </div>
     </div>
+    <div className="cardConteiner">
+      <CardInformation/>
+    </div>
+    </>
   );
 }
 

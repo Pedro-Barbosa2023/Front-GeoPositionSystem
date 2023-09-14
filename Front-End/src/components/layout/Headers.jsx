@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
- 
 } from "reactstrap";
 
 const Headers = (args) => {
-  const [theme, setTheme] = useState(false);
+  //const [theme, setTheme] = useState(false);
 
   return (
     <div>
       <>
-        <Navbar className="navBar" dark >
+        <Navbar className="navBar" dark fixed="top" >
           <NavbarBrand href="/">
             <img
               alt="GPS Locator"
@@ -21,8 +20,8 @@ const Headers = (args) => {
                 width: 40,
               }}
             />
+          GeoPosition System
           </NavbarBrand>
-          <h2 className="textNavBar" color="white">GeoPosition System</h2>
         </Navbar>
       </>
     </div>
