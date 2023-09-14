@@ -7,7 +7,7 @@ const routes = require('./src/routes')
 
 const app = express()
 
-mongoose.connect('mongodb+srv://admin:admin@projeto-engsoft.bpamuas.mongodb.net/?retryWrites=true&w=majority', { // tudo padrao
+mongoose.connect('mongodb+srv://admin:admin@geopositionsystem.2pvoswo.mongodb.net/?retryWrites=true&w=majority', { // tudo padrao
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false
