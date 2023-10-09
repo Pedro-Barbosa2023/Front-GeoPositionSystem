@@ -4,6 +4,7 @@ import "./index.css";
 import Headers from "./components/layout/Headers";
 import CardInformation from "./components/layout/Card";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import * as managerService from "./services/ManagerService/managerService";
 
 function App() {
   const { isLoaded } = useJsApiLoader({
@@ -18,8 +19,9 @@ function App() {
 
   useEffect(() => {
     const updateMarkerPosition = () => {
-      const newLat = -19.6009590611331 + (Math.random() - 0.1) * 0.0001; // gera posições aleatórias para teste
-      const newLng = -43.8946541874073 + (Math.random() - 0.1) * 0.001; // gera posições aleatórias para teste
+      const data = managerService.GetData();
+      const newLat = data.latitude; // gera posições aleatórias para teste
+      const newLng = data.longitude; // gera posições aleatórias para teste
       setPosition({ lat: newLat, lng: newLng });
     };
 

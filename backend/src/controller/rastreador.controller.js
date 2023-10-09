@@ -3,21 +3,21 @@ const Rastreador = require("../model/Rastreador")
 
 module.exports = {
     async index(req, res) {
-        const Rastreador = await Rastreador.find();
+        const rastreador = await Rastreador.find().sort({ _id: -1 }).limit(1);
 
-        res.json(Rastreador)
+        return res.json(rastreador)
     },
 
     async detail(req, res) {
         const { _id } = req.params
-        const Rastreador = await Rastreador.findOne({ _id });
+        const rastreador = await Rastreador.findOne({ _id });
 
-        res.json(Rastreador)
+        return res.json(rastreador)
     },
 
     async delete(req, res) {
         const { _id } = req.params
-        const Rastreador = await Rastreador.findByIdAndDelete({ _id });
+        const rastreador = await Rastreador.findByIdAndDelete({ _id });
 
         res.json({ Message: "Excluido com Sucesso" })
     },
@@ -57,7 +57,7 @@ module.exports = {
             longitude,
             altura
         } // vars vindo co corpo
-        RastreadorUpdate = await Rastreador.findByIdAndUpdate({ _id }, dataUpdate, { new: true }) // criando o Rastreador atraves das var que vem do corpo
+        const RastreadorUpdate = await Rastreador.findByIdAndUpdate({ _id }, dataUpdate, { new: true }) // criando o Rastreador atraves das var que vem do corpo
         return res.status(200).json(RastreadorUpdate)
 
     }

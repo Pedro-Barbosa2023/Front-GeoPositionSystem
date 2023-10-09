@@ -25,6 +25,6 @@ app.use(routes)
 
  
 
-app.listen(3003, function(){
-    console.log("App Iniciando na porta 3003")
+app.listen(8000, function(){
+    console.log("App Iniciando na porta 8000")
 })
