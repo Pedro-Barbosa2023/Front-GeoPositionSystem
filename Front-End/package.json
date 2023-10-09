@@ -13,11 +13,14 @@
     "@googlemaps/js-api-loader": "^1.16.2",
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.19.2",
+    "@react-spring/web": "^9.7.3",
     "bootstrap": "^5.3.1",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-leaflet": "^4.2.1",
     "reactstrap": "^9.2.0"
   },
   "devDependencies": {

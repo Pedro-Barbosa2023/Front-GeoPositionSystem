@@ -4,6 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
-
-
-
+.navBar {
+  background-color: #403E3E;
+}
+.map {
+  margin-bottom: -50px;
+}
+.cardConteiner {
+  margin-left: -155px;
+  margin-top: -500px;
+}
