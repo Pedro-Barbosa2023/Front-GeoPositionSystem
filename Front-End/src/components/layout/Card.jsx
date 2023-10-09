@@ -6,24 +6,33 @@ import {
   ListGroup,
   ListGroupItem,
 } from "reactstrap";
-
+import * as managerService from "../../services/ManagerService/managerService"
 
 
 const CardInformation = (args) => {
   //const [theme, setTheme] = useState(false);
 
   const [GPSInformation, setGPSInformation] = useState({
-    velocity: 1,
-    height: 17,
+    velocidade: 1,
+    altura: 17,
   });
+  const [altitude, setaltitude] = useState("1")
+  const [velocidade, setvelocidade] = useState("17")
+  
 
-/*
-Criar lógica aqui para receber informações do GPS
 
   useEffect(() => {
     const updateGPSInformation = () => {
+      let data = managerService.GetData();
+      let coordenadas;
+      data.then(value => {
+        coordenadas = value.dadosLocais
+        console.log(coordenadas)
+        setaltitude(coordenadas.altura)
+        setvelocidade(coordenadas.__v)
+        setGPSInformation({  coordenadas });
+      })
       
-      setGPSInformation({  });
     };
 
     // Atualize as informações a cada 3 segundo
@@ -33,7 +42,7 @@ Criar lógica aqui para receber informações do GPS
     return () => clearInterval(intervalId);
   }, []);
 
-*/
+
 
   return (
     <div className="cardConteiner">
@@ -48,8 +57,8 @@ Criar lógica aqui para receber informações do GPS
             <CardTitle tag="h5">GPS Informações</CardTitle>
           </CardBody>
           <ListGroup flush>
-            <ListGroupItem >Velocidade: {GPSInformation.velocity} Km/h </ListGroupItem>
-            <ListGroupItem >Altitude: {GPSInformation.height} m </ListGroupItem>
+            <ListGroupItem >Velocidade: {velocidade} Km/h </ListGroupItem>
+            <ListGroupItem >Altitude: {altitude} m </ListGroupItem>
           </ListGroup>
           <CardBody>
             <h7>
