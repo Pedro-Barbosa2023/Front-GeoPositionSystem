@@ -19,10 +19,17 @@ function App() {
 
   useEffect(() => {
     const updateMarkerPosition = () => {
-      const data = managerService.GetData();
-      const newLat = data.latitude; // gera posições aleatórias para teste
-      const newLng = data.longitude; // gera posições aleatórias para teste
-      setPosition({ lat: newLat, lng: newLng });
+      let data = managerService.GetData();
+      let coordenadas;
+      data.then(value => {
+        coordenadas = value.dadosLocais
+        console.log(coordenadas)
+        const newLat = parseFloat(coordenadas.latitude); // gera posições aleatórias para teste
+        const newLng = parseFloat(coordenadas.longitude); // gera posições aleatórias para teste
+        setPosition({ lat: newLat, lng: newLng });
+        console.log(JSON.stringify(position))
+      })
+      
     };
 
     // Atualize a posição do marcador a cada 1 segundos

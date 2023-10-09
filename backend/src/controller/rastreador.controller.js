@@ -3,7 +3,7 @@ const Rastreador = require("../model/Rastreador")
 
 module.exports = {
     async index(req, res) {
-        const rastreador = await Rastreador.find().sort({ _id: -1 }).limit(1);
+        const rastreador = (await Rastreador.find().sort({ _id: -1 }).limit(1)).shift();
 
         return res.json(rastreador)
     },

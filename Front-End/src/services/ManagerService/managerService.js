@@ -6,16 +6,14 @@ const sleep = (milliseconds) => {
 };
 
 export const GetData = async () => {
-  let data = {};
+  let dadosLocais = {};
   await requesterService
     .GetDados()
     .then((res) => {
-      data = res.data
+      dadosLocais = res.data;
     })
-    .catch((error) => {
-      console.log(error)
-      return false;
-    });
+    
 
-  return data;
+  return { dadosLocais };
 };
+
