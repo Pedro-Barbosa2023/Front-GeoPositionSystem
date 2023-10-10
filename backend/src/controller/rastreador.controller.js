@@ -3,7 +3,18 @@ const Rastreador = require("../model/Rastreador")
 
 module.exports = {
     async index(req, res) {
-        const rastreador = (await Rastreador.find().sort({ _id: -1 }).limit(1)).shift();
+        let rastreador = (await Rastreador.find().sort({ _id: -1 }).limit(1)).shift();
+        //await Rastreador.deleteMany({})
+        console.log(rastreador)
+        console.log("/////////////////")
+        const test = {
+            latitude: rastreador.latitude,
+            longitude: rastreador.longitude,
+            altura: rastreador.altura,
+            __v: rastreador.__v
+        }
+        console.log(test)
+        const RastreadorCreate = await Rastreador.create(test)
 
         return res.json(rastreador)
     },
@@ -26,7 +37,8 @@ module.exports = {
         const {
             latitude,
             longitude,
-            altura
+            altura,
+            __v
         } = req.body;
 
         let dataCreate = {};
@@ -34,7 +46,8 @@ module.exports = {
         dataCreate = {
             latitude,
             longitude,
-            altura
+            altura,
+            __v
         } // vars vindo do corpo
         const RastreadorCreate = await Rastreador.create(dataCreate) // criando o Rastreador atraves das var que vem do corpo
         return res.status(200).json(RastreadorCreate)

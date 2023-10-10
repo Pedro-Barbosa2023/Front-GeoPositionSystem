@@ -22,18 +22,19 @@ function App() {
       let data = managerService.GetData();
       let coordenadas;
       data.then(value => {
+        if(value.dadosLocais._id !== null){
         coordenadas = value.dadosLocais
         console.log(coordenadas)
         const newLat = parseFloat(coordenadas.latitude); // gera posições aleatórias para teste
         const newLng = parseFloat(coordenadas.longitude); // gera posições aleatórias para teste
         setPosition({ lat: newLat, lng: newLng });
-        console.log(JSON.stringify(position))
+        console.log(JSON.stringify(position))}
       })
       
     };
 
     // Atualize a posição do marcador a cada 1 segundos
-    const intervalId = setInterval(updateMarkerPosition, 1000);
+    const intervalId = setInterval(updateMarkerPosition, 10000);
 
     // Limpe o intervalo quando o componente for desmontado
     return () => clearInterval(intervalId);

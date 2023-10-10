@@ -26,17 +26,18 @@ const CardInformation = (args) => {
       let data = managerService.GetData();
       let coordenadas;
       data.then(value => {
+        if(value.dadosLocais._id !== null){
         coordenadas = value.dadosLocais
         console.log(coordenadas)
         setaltitude(coordenadas.altura)
         setvelocidade(coordenadas.__v)
-        setGPSInformation({  coordenadas });
+        setGPSInformation({  coordenadas });}
       })
       
     };
 
     // Atualize as informações a cada 3 segundo
-    const intervalId = setInterval(updateGPSInformation, 3000);
+    const intervalId = setInterval(updateGPSInformation, 10000);
 
     // Limpe o intervalo quando o componente for desmontado
     return () => clearInterval(intervalId);
