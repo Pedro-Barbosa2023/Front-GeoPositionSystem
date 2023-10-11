@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+    <h1>Adaptação Firebase para aquisição de Dados do SIM800L</h1>
+    <p>Para Fazer o módulo GPS sem depender do roteamento de WI-FI do celular, precisamos adaptar nosso sistema. O módulo 2G SIM800L não comunicava com nossa API, apenas com o Firebase, dessa forma, com essa página fazemos requisições ao Firebase e enviamos os dados para o Mongo e aí utilizamos os dados em tempo real em nossa aplicação.</p>
+{% endblock %}
