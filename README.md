@@ -84,7 +84,8 @@ Tarefas e responsáveis
 - Criar um controller para acessar tais informações no banco de dados [Arthur]
 
 
--
+DIAGRAMA UML
+![firefox_BYkbUexQJf](https://github.com/Pedro-Barbosa2023/GeoPositionSystem/assets/102704678/a38a2225-04ed-412d-9b52-17789cc2265d)
 
 
 
