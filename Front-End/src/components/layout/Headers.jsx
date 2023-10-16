@@ -1,40 +1,37 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-} from "reactstrap";
-
+import { Navbar, NavbarBrand, Button } from "reactstrap";
 
 const Headers = (args) => {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
+
+  const toggleTheme = () => {
+    if (theme === false) {
+      document.body.style.backgroundColor = '#696969';
+      setTheme(true);
+    } else {
+      document.body.style.backgroundColor = '#D3D3D3';
+      setTheme(false);
+    }
+  };
 
   return (
     <div>
-      <>
-        <Navbar className="my-2" color="black" dark >
-          <NavbarBrand href="/">
-            <img
-              alt="Bem-Vindo ao GPS Locator"
-              src="../../img/logo.svg"
-              style={{
-                height: 40,
-                width: 40,
-              }}
-            />
-          </NavbarBrand>
-        </Navbar>
-      </>
+      <Navbar className="navBar" dark fixed="top">
+        <NavbarBrand href="/">
+          <img
+            alt="GPS Locator"
+            src="/images/logo.png"
+            style={{
+              height: 40,
+              width: 40,
+            }}
+          />
+          GeoPosition System
+        </NavbarBrand>
+        <Button outline onClick={toggleTheme}>Tema</Button>
+      </Navbar>
     </div>
   );
 };
+
 export default Headers;
